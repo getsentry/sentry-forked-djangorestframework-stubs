@@ -1,3 +1,25 @@
+sentry-forked-djangorestframework-stubs
+=======================================
+
+### new release
+
+make a new branch for the fork of an upstream tag:
+
+```bash
+git remote add upstream git@github.com:typeddjango/djangorestframework-stubs
+git fetch upstream --tags
+git push origin --tags
+git checkout 1.2.3 -b sentry-1.2.3
+```
+
+- cherry-pick the craft / release commit(s) into your branch from `master`
+- cherry-pick relevant commit(s) from previous releases
+
+releases are done through craft in the release.yml workflow -- make sure to
+target your particular branch with a `-#` release postfix (like `1.2.3-1`)
+
+___
+
 <img src="http://mypy-lang.org/static/mypy_light.svg" alt="mypy logo" width="300px"/>
 
 # pep484 stubs for Django REST framework

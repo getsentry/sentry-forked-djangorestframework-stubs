@@ -461,7 +461,7 @@ class ChoiceField(Field[str, str | int | tuple[str | int, str | int | tuple], st
     _choices: dict
     def __init__(
         self,
-        choices: Iterable[Any],
+        choices: Sequence[Any],
         *,
         read_only: bool = ...,
         write_only: bool = ...,
@@ -497,7 +497,7 @@ class MultipleChoiceField(
     def __init__(
         self,
         *,
-        choices: Iterable[Any],
+        choices: Sequence[Any],
         read_only: bool = ...,
         write_only: bool = ...,
         required: bool | None = None,

@@ -36,7 +36,7 @@ extras_require = {
 
 setup(
     name="sentry-forked-djangorestframework-stubs",
-    version="3.15.1-1",
+    version="3.15.1-2",
     description="PEP-484 stubs for django-rest-framework",
     long_description=readme,
     long_description_content_type="text/markdown",
